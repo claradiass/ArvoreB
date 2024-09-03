@@ -1,11 +1,11 @@
 public class No {
-    int[] elementos;
+    Integer[] elementos;
     No[] filhos;
     No pai;
     boolean ehFolha;
 
-    public No(int dado) {
-        this.elementos = new int[3];
+    public No(Integer dado) {
+        this.elementos = new Integer[3];
         elementos[0] = dado;
         this.filhos = new No[4];
         this.pai = null;
@@ -13,11 +13,11 @@ public class No {
 
     }
 
-    public int[]  getElementos() {
+    public Integer[]  getElementos() {
         return elementos;
     }
 
-    public void setElementos(int[] elementos) {
+    public void setElementos(Integer[] elementos) {
         this.elementos = elementos;
     }
 
@@ -45,8 +45,7 @@ public class No {
         this.ehFolha = ehFolha;
     }
 
-    @Override
-    public String toString() {
-        return "Dados:" + getElementos();
-    }
+
+
+
 }
